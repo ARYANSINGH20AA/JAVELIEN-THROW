@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-110945660-1" type="d0f72617ac89796a18b612af-text/javascript"></script>
+<script type="d0f72617ac89796a18b612af-text/javascript">
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+	
+	  gtag('config', 'UA-110945660-1');
+	</script>
+<link rel="canonical" href="https://photoscissors.com/upload" />
+<title>Upload Image to Remove Background</title>
+<meta name="description" content="Upload Image to Remove Image Background Fully Automatically and Free!">
+<meta name="keywords" content="upload image photoscissors">
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" href="/favicon.ico" type="image/ico">
+<link rel="stylesheet" href="/font-awesome/css/font-awesome.min.css">
+<link href="/bootstrap/css/bootstrap.css" rel="stylesheet">
+<link rel="stylesheet" href="/fonts/stylesheet.css" type="text/css" />
+<link href="/css/style.css" rel="stylesheet">
+<script src="/jquery/jquery.min.js" type="d0f72617ac89796a18b612af-text/javascript"></script>
+<script src="/bootstrap/js/bootstrap.js" type="d0f72617ac89796a18b612af-text/javascript"></script>
+</head>
+<body>
+<div id="fb-root"></div>
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v5.0&appId=617807899119237" type="d0f72617ac89796a18b612af-text/javascript"></script>
+<div id='base_content'>
+<div id="nav">
+<style scoped>
+			.mobile-btn {
+				font-family: Arial, sans-serif;
+				float: right;
+				margin-right: 5px;
+				font-weight: bold;
+			}
+	
+			#navbar>ul>li {
+				font-family: Arial, sans-serif;
+				font-size: 16px;
+				font-weight: bold;
+			}
+	
+			#navbar>ul>li>a {
+				color: #52BAD5;
+			}
+	
+			#navbar>ul>li>a:hover {
+				background-color: #E7E7E7;
+				color: #000000;
+			}
+	
+			#black-friday
+			{
+				background-color:#505050;
+				color:white;
+			}
+	
+			#navbar>form>button.btn.btn-danger,
+			#navbar>form>button.btn.btn-success {
+				font-family: Arial, sans-serif;
+				font-weight: bold;
+			}
+		</style>
+<nav class="navbar navbar-default navbar-fixed-top">
+<div class="container">
+<div class="navbar-header">
+<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+<span class="sr-only">Toggle navigation</span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+</button>
+<a class="navbar-brand" href="/" rel="home" title="PhotoScissors">
+<span>
+<img style="margin-top:-7px;" width="32px" height="32px" src="/images/photoscissors-icon-128.png" />
+<span class="hidden-sm">PhotoScissors</span>
+</span>
+</a>
+</div>
+<div id="navbar" class="navbar-collapse collapse">
+<ul class="nav navbar-nav">
+<li><a href="/tutorials">Tutorials</a></li>
+<li><a href="/download">API &amp; Tools</a></li>
+
+<li><a href="/pricing">Pricing</a></li>
+
+
+<li><a href="/support">Support</a></li>
+
+</ul>
+<div class="navbar-right">
+<a href="/upload" class="btn navbar-btn btn-success">Remove Background</a>
+<a href="/user/profile" id="profileBtn" class="btn navbar-btn btn-default hidden">Profile</a>
+<a href="/user/logout" id="logoutBtn" class="btn navbar-btn btn-default hidden">Logout</a>
+
+<a href="/user/login" id="loginBtn" class="btn navbar-btn btn-default">Log In</a>
+</div>
+</div>
+</div>
+</nav>
+</div> <nav class="navbar navbar-default navbar-fixed-bottom hidden" id="cookieConsentBar">
+<div class="container">
+<p class="navbar-text">This website uses cookies to enhance your browsing experience. <a href="/privacy-policy">Learn More</a></p>
+<div class="navbar-right">
+<a nohref="1" onclick="if (!window.__cfRLUnblockHandlers) return false; closeCookieConsent()" class="btn navbar-btn btn-success" data-cf-modified-d0f72617ac89796a18b612af-="">Got It</a>
+</div>
+</div>
+</nav>
+<div id="maincontent" style="margin-top:50px;">
+<div id="container" class="container" style="margin-bottom:40px">
+<script src="/exif-js/exif.js" type="d0f72617ac89796a18b612af-text/javascript"></script>
+<script src="/dropzone/dropzone.js" type="d0f72617ac89796a18b612af-text/javascript"></script>
+<link rel="stylesheet" href="/dropzone/dropzone.css">
+<script src="/jquery/jquery.min.js" type="d0f72617ac89796a18b612af-text/javascript"></script>
+<h1>Upload Image to Remove Background</h1>
+<style scoped>
+	.dropzone {
+		border: 2px dashed #0087F7;
+		border-radius: 5px;
+		background: white;
+	}
+
+	.dropzone .dz-message {
+		margin: 0;
+	}
+</style>
+<div id="uploadForm" class="dropzone">
+<div class="dz-message" data-dz-message>
+<p>
+Drop file here or click to upload an image.<br>
+The format should be JPG, PNG or WebP.<br>
+Maximum image size: 10Mb<br>
+Maximum image resolution: 4.2 megapixels</p>
+<button type="button" class="btn btn-primary btn-lg">Upload Image</button>
+</div>
+</div>
+<div style="margin-top: 5px; border: 1px solid #000; border-radius: 5px; background:#eee;">
+<div class="row">
+<div class="col-xs-4">
+<img src="/images/photoscissors-image.png" class="img-responsive img-rounded" alt="PhotoScissors">
+</div>
+<div class="col-xs-8">
+<h2>Download for Windows &amp; Mac</h2>
+<p>Top Reasons to use the Desktop version:</p>
+<ul>
+<li>No limitations by image size</li>
+<li>No limitations by file size</li>
+<li>Batch background removal</li>
+<li>Rotation feature for foreground and shadow layers</li>
+<li>Removing background by color</li>
+<li>Filters for background and foreground</li>
+</ul>
+<a href="/download" type="button" class="btn btn-success btn-lg">Download</a></p>
+</div>
+</div>
+</div>
+<script type="d0f72617ac89796a18b612af-text/javascript">
+	Dropzone.autoDiscover = false;
+	$(function () {
+
+		var myDropzone = new Dropzone("div#uploadForm", {
+			maxFilesize: 10,
+			paramName: "image",
+			maxFiles: 1,
+			url: "/upload",
+			autoProcessQueue: true,
+			method: "post",
+			withCredentials: true,
+			acceptedFiles: ".png,.jpg,.jpeg,.webp,.tiff,.tif",
+			uploadMultiple: false
+		});
+
+		// Set signed upload URL for each file being processing
+		/*
+		myDropzone.on('processing', function(file) {
+			myDropzone.options.url = file.uploadURL
+		});
+*/
+		myDropzone.on('success', function (file, responseText) {
+			if (responseText) {
+				const response = responseText;
+				window.location.href = "/editor/" + response.id + "/" + response.secret + "/";
+			} else {
+				//showMessage("Error",response.error);   
+				myDropzone.removeAllFiles();
+			}
+		});
+	})
+</script>
+</div>
+</div>
+<div class="container-fluid" id="footer">
+<div class="row">
+<footer>
+<style scoped>
+						footer {
+							padding-top: 40px;
+							background: #232323 url(/images/bg-footer-top.png ) repeat-x top center;
+							color: #bbb;
+						}
+		
+						footer .footer-credits {
+							background: url(/images/bg-footer-bevel.png) repeat-x top center;
+							padding: 45px 0 40px;
+							color: #736E6E;
+						}
+		
+						footer h4 {
+							margin-top: 20px;
+						}
+		
+						footer small {
+							color: gray;
+						}
+		
+						footer .thumbnail {
+							background-color: inherit;
+							border: none;
+						}
+		
+						footer .thumbnail img {
+							margin-left: 0;
+						}
+		
+						footer .spec {
+							max-width: 340px;
+						}
+					</style>
+<div class="container">
+<style scoped>
+							footer h3 {
+								font-size: 28px;
+							}
+						</style>
+<div class="row">
+<div class="col-xs-12">
+<p>Links to other our projects: </p>
+</div>
+</div>
+<div class="row">
+<div class="col-md-3 col-sm-6 col-xs-12">
+<div class="spec">
+<h4><a href="https://theinpaint.com" target="_blank">Inpaint</a> <br class="visible-lg visible-md"> <a href="https://theinpaint.com"><small>theInpaint.com</small></a></h4>
+<div class="row">
+<div class="col-xs-6 col-md-12">
+<a href="https://theinpaint.com" class="thumbnail">
+<img src="/images/inpaint-icon-128.png" width="128" height="128" alt="Inpaint">
+</a>
+</div>
+<div class="col-xs-6 col-md-12">
+Magically Remove Elements From Photos!
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-3 col-sm-6 col-xs-12">
+<div class="spec">
+<h4><a href="https://www.iresizer.com" target="_blank">iResizer</a> <br class="visible-lg visible-md" /> <a href="https://www.iresizer.com"><small>iResizer.com</small></a></h4>
+<div class="row">
+<div class="col-xs-6 col-md-12">
+<a href="https://www.iresizer.com" class="thumbnail">
+<img src="/images/iresizer-icon-128.png" width="128" height="128" alt="iResizer">
+</a>
+</div>
+<div class="col-xs-6 col-md-12">
+Scale an image without changing important visual content such as people,
+buildings, animals, etc.
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-3 col-sm-6 col-xs-12">
+<div class="spec">
+<h4><a href="https://www.photostitcher.com" target="_blank">PhotoStitcher</a> <br class="visible-lg visible-md" /> <a href="https://www.photostitcher.com"><small>PhotoStitcher.com</small></a>
+</h4>
+<div class="row">
+<div class="col-xs-6 col-md-12">
+<a href="https://www.photostitcher.com" class="thumbnail">
+<img src="/images/photostitcher-icon-128.png" width="128" height="128" alt="PhotoStitcher">
+</a>
+</div>
+<div class="col-xs-6 col-md-12">
+Automatically Stitch Your Photos To Panorama!
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-3 col-sm-6 col-xs-12">
+<div class="spec">
+<h4><a href="https://www.folderico.com" target="_blank">FolderIco</a> <br class="visible-lg visible-md" /> <a href="https://www.folderico.com"><small>FolderIco.com</small></a>
+</h4>
+<div class="row">
+<div class="col-xs-6 col-md-12">
+<a href="https://www.folderico.com" class="thumbnail">
+<img src="/images/folderico-icon-128.png" width="128" height="128" alt="FolderIco">
+</a>
+</div>
+<div class="col-xs-6 col-md-12">
+Customize Folder Icon and Color in One Click!
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="footer-credits">
+<p>&copy; 2014-2021 PhotoScissors.com All Rights Reserved.</p>
+</div>
+</div>
+</footer>
+</div>
+</div>
+
+<div class="modal fade" id="iosModal" tabindex="-1" role="dialog">
+<div class="modal-dialog" style="background-color: #000;">
+<div class="modal-content">
+<div class="modal-body">
+<div class="row text-center">
+<div class="col-sm-4">
+<img src="/images/photoscissors-ios-rounded-128.png" class="" alt="PhotoScissors">
+</div>
+<div class="col-sm-8">
+<h3>Would you like to download PhotoScissors for iOS</h3>
+</div>
+</div>
+</div>
+<div class="modal-footer">
+<a href="https://apps.apple.com/app/photoscissors/id1501347047" target=_blank type="button" class="btn btn-success btn-lg">Download</a>
+<button type="button" class="btn btn-default btn-lg" data-dismiss="modal">Close</button>
+</div>
+</div>
+</div>
+</div>
+
+<script src="/js/modal.js?14062021" type="d0f72617ac89796a18b612af-text/javascript"></script> </div>
+<script src="/cdn-cgi/scripts/7d0fa10a/cloudflare-static/rocket-loader.min.js" data-cf-settings="d0f72617ac89796a18b612af-|49" defer=""></script><script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"rayId":"6803451b2cd11b69","token":"80127ef6f77b4afbbe859db2d8209b26","version":"2021.8.0","si":10}'></script>
+</body>
+<script src="/js/utils.js" type="d0f72617ac89796a18b612af-text/javascript"></script>
+<script src="/js/userinfo.js" type="d0f72617ac89796a18b612af-text/javascript"></script>
+<script type="d0f72617ac89796a18b612af-text/javascript">
+	$(document).ready(getUserInfo());
+</script>
+</html>
